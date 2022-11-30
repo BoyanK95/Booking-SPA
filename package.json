@@ -1,0 +1,24 @@
+{
+  "name": "booking-spa",
+  "version": "1.0.0",
+  "description": "A simple single page booking application,\r Created by using HTML, CSS and JS with libraries (page and lit-html) - for the frontend. \r And back4app for the backend. \r Everything (including the html and css) are hand coded by me.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoyanK95/BoyanK95.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BoyanK95/BoyanK95.github.io/issues"
+  },
+  "homepage": "https://github.com/BoyanK95/BoyanK95.github.io#readme",
+  "dependencies": {
+    "lit-html": "^2.4.0",
+    "page": "^1.11.6"
+  }
+}
