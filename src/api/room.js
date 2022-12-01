@@ -1,9 +1,10 @@
+import { addOwner } from "../util.js";
 import { del, get, post, put } from "./api.js";
 
 
 const endpoints = {
     'rooms': '/classes/Room',
-    'roomById': `/classes/Room`
+    'roomById': `/classes/Room/`
 }
 
 export async function getAll() {
@@ -15,13 +16,11 @@ export async function getById(id) {
 }
 
 export async function create(roomData, userId) {
-    const data = Object.assign({}, roomData)
-    data.owner = {__type:'Pointer', className: '_User', objectId: userId}
-    return post(endpoints.rooms, data)
+    return post(endpoints.rooms, addOwner(roomData, userId))
 }
 
-export async function update(id, roomData) {
-    return put(endpoints.roomById + id, roomData)
+export async function update(id, roomData, userId) {
+    return put(endpoints.roomById + id, addOwner(roomData, userId))
     
 }
 

@@ -12,7 +12,7 @@ async function request(method, url = '/', data) {
             'X-Parse-JavaScript-Key': apiKey
         }
     }
-
+    
     if (data !== undefined) {
         options.headers['Content-Type'] = 'application/json'
         options.body = JSON.stringify(data)

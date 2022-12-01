@@ -9,3 +9,24 @@ export function getUserData() {
 export function clearUserData() {
     sessionStorage.removeItem('userData')
 }
+
+export function createPointer(className, objectId) {
+    return {__type:'Pointer', className, objectId }
+}
+
+export function addOwner(record, ownerId) {
+    const data = Object.assign({}, record)
+    data.owner = createPointer('_User', ownerId)
+
+    return data
+}
+
+export function submitHandler(callback) {
+    return function (e) {
+        e.preventDefault()
+        const formData = new FormData(e.target)
+        const data = Object.fromEntries([...formData].map(([k, v]) => [k, v.trim()]))
+
+        callback(data, e.target)
+    }
+}
