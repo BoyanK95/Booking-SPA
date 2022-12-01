@@ -14,5 +14,9 @@ body{
     box-shadow: 9px 9px 9px 9px rgba(0, 0, 0, 0.4);
     padding: 7px 15px;
     margin: 20px 30px;
-    background-color: rgb(213, 232, 238);
+    background-color: rgb(217, 233, 238);
+}
+
+label{
+    display: block;
 }
