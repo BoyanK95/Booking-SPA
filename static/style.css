@@ -1,0 +1,18 @@
+body{
+    width: 980px;
+    background-color: rgb(189, 201, 227);
+    text-align: center;
+    align-items: center;
+}
+
+.room-card{
+    float: left;
+    font-size: larger;
+    text-align: center;
+    width: 300px;
+    border-radius: 16px;
+    box-shadow: 9px 9px 9px 9px rgba(0, 0, 0, 0.4);
+    padding: 7px 15px;
+    margin: 20px 30px;
+    background-color: rgb(213, 232, 238);
+}
