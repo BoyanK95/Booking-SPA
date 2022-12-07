@@ -33,28 +33,36 @@ nav {
 nav a {
     text-decoration: none;
     padding: 23px 30px;
-    color: rgb(32, 54, 122);
+    color: rgb(57, 78, 142);
     font-weight: 600;
 }
 
 #logo-img{
     font-size: 64px;
     margin-top: 15px;
-    color: rgb(7, 7, 67);
+    color: rgb(34, 38, 121);
 }
 
 nav a:hover {
-    background-color: rgb(3, 41, 106);
-    color: rgb(213, 226, 233);
+    color: rgb(4, 11, 37);
     border-radius: 15px;
-    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.4);
 }
 
 button{
     border-radius: 9px;
     font-size: 19px;
+    font-weight: 550;
     padding: 7px;
     margin: 15px;
+    color: rgb(57, 78, 142);
+    background-color: rgb(224, 233, 247);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(57, 78, 142);
+    color: #fff;
+    box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.3);
 }
 
 #welcome-user-msg{
