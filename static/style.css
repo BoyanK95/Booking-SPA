@@ -56,3 +56,13 @@ button{
     padding: 7px;
     margin: 15px;
 }
+
+#welcome-user-msg{
+    text-align: right;
+}
+
+#homeImg{
+    width: 700px;
+    max-width: 100%;
+
+}

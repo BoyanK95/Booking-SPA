@@ -8,6 +8,7 @@ const createTemplate = (onSubmit) => html`
     <label>Name: <input type="text" name="name" ></label>
     <label>Location: <input type="text" name="location" ></label>
     <label>Beds: <input type="number" name="beds" ></label>
+    <label>Price: <input type="number" name="price" ></label>
     <button>Create Room</button>
 </form>`
 
@@ -15,15 +16,15 @@ export function createView(ctx){
     ctx.render(createTemplate(submitHandler(onSubmit)))
 
 
-    async function onSubmit({name, location, beds}) {
+    async function onSubmit({name, location, beds, price}) {
         beds = parseInt(beds)
-        if (name == '' || location == '' || Number.isNaN(beds)) {
+        if (name == '' || location == '' || Number.isNaN(beds) || Number.isNaN(price)) {
             return alert('All fields are required')
         }
         
         const userId = ctx.user?.objectId
 
-        const result = await roomService.create({name, location, beds}, userId)
+        const result = await roomService.create({name, location, beds, price}, userId)
 
         ctx.page.redirect('/rooms/' + result.objectId)
     }
