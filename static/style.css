@@ -1,4 +1,6 @@
+
 body{
+    margin: 0px;
     width: 980px;
     background-color: rgb(189, 201, 227);
     text-align: center;
@@ -19,4 +21,38 @@ body{
 
 label{
     display: block;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 23px 30px;
+    color: rgb(32, 54, 122);
+    font-weight: 600;
+}
+
+#logo-img{
+    font-size: 64px;
+    margin-top: 15px;
+    color: rgb(7, 7, 67);
+}
+
+nav a:hover {
+    background-color: rgb(3, 41, 106);
+    color: rgb(213, 226, 233);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+button{
+    border-radius: 9px;
+    font-size: 19px;
+    padding: 7px;
+    margin: 15px;
 }
