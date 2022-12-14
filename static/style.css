@@ -102,3 +102,8 @@ header h3 a{
     padding: 6.5rem;
     color: #060636;
 }
+
+ #welcome-user-msg {
+    padding-right: 1rem;
+    margin-top: -2rem;
+}
