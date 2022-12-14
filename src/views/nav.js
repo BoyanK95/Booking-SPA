@@ -5,6 +5,7 @@ export const navTemplate = (hasUser) => html`
   <div id="logo-img"><a href="/"><i class="fa-solid fa-hotel" ></i></a></div>
   <a href="/">Home</a>
   <a href="/rooms">Rooms</a>
+  <a href="/about">About us</a>
   ${hasUser ? html`
   <a href="/create">Create</a>
   <a href="javascript:void(0)">Logout</a>` : html`

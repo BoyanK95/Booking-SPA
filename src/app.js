@@ -9,6 +9,7 @@ import { loginView } from "./views/login.js";
 import { registerView } from "./views/register.js";
 import { navTemplate } from "./views/nav.js";
 import { homeView } from "./views/home.js";
+import { aboutUsView } from "./views/about.js";
 
 
 page(addRender(document.querySelector('main'), document.querySelector('header')))
@@ -20,5 +21,6 @@ page('/rooms/:id', ({ params: {id} })=> console.log('details', id))
 page('/create',  createView)
 page('/login',  loginView)
 page('/register',  registerView)
+page('/about', aboutUsView)
 
 page.start()
