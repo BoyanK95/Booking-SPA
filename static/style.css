@@ -103,6 +103,12 @@ header h3 a{
     color: #060636;
 }
 
+.aboutUs ul {
+    text-align: left;
+    outline: dashed;
+    letter-spacing: 2.5px;
+}
+
  #welcome-user-msg {
     padding-right: 1rem;
     margin-top: -2rem;
