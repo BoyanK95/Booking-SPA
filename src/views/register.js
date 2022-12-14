@@ -27,6 +27,6 @@ export function registerView(ctx) {
     }
 
     await register(email, username, password);
-    ctx.page.redirect("/rooms");
+    ctx.page.redirect("/");
   }
 }

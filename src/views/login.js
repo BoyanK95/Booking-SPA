@@ -21,6 +21,6 @@ export function loginView(ctx) {
     }
 
     await login(email, password);
-    ctx.page.redirect("/rooms");
+    ctx.page.redirect("/");
   }
 }
